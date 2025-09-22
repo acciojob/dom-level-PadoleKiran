@@ -1,6 +1,12 @@
 //your JS code here. If required.
-let v  = document.querySelectorAll("li");
+let target  = document.getElementById('level');
 
-v.forEach(cell => {
-	let i = document.
-})
+let level = 0;
+let current = target;
+
+while (current) {
+	level++;
+	current = current.parentElement;
+}
+
+alert("the level of the element is: " + level);
